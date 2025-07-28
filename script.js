@@ -25,6 +25,7 @@ const board_size = 3;
 const game_size = 3;
 
 const board_container = document.getElementById("boardContainer");
+const body = document.getElementById("body");
 
 let lastMoveRow = null;
 let lastMoveCol = null;
@@ -34,8 +35,10 @@ let player = "X"
 function switchPlayer() {
     if (player == "X") {
         player = "Y";
+        body.style.backgroundColor = "#AAAAFF"
     } else {
         player = "X";
+        body.style.backgroundColor = "#FFAAAA"
     }
 }
 
